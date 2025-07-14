@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Star, Shield, Zap } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { getImagePath } from '../utils/paths'
 
 export default function Download() {
@@ -140,6 +141,15 @@ export default function Download() {
                                     <Image src={getImagePath("/launcher_3.png")} alt="Earnrly" width={24} height={24} className="w-6 h-6 rounded-lg" />
                                     Download for iOS
                                 </motion.button>
+                                
+                                {/* Privacy Notice */}
+                                <p className="text-center text-sm text-gray-400 mt-4">
+                                    By downloading, you agree to our{' '}
+                                    <Link href="/privacy" className="text-yellow-400 hover:text-yellow-300 underline">
+                                        Privacy Policy
+                                    </Link>
+                                    {' '}and Terms of Service
+                                </p>
                             </div>
 
                             {/* Additional Info */}
