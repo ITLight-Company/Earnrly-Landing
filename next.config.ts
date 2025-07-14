@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   basePath: '/Earnrly-Landing',
+  assetPrefix: '/Earnrly-Landing',
   images: {
     unoptimized: true,
     remotePatterns: [
