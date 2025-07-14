@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FlashTasker Landing Page
 
-## Getting Started
+Nowoczesna strona landing dla aplikacji FlashTasker - najlepszej aplikacji do zarabiania pieniędzy przez telefon.
 
-First, run the development server:
+## 🚀 Funkcje
+
+- **Responsywny design** - Działa idealnie na wszystkich urządzeniach
+- **Nowoczesne animacje** - Płynne animacje dzięki Framer Motion
+- **SEO zoptymalizowane** - Przygotowane pod wyszukiwarki
+- **Szybkie ładowanie** - Optymalizowane pod kątem wydajności
+- **Intuicyjny interfejs** - Skupiony na konwersji
+
+## 🏗️ Tech Stack
+
+- **Next.js 15** - React framework z App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animacje i interakcje
+- **Lucide React** - Ikony
+- **Inter & Poppins** - Google Fonts
+
+## 📱 Sekcje Strony
+
+1. **Hero** - Główny CTA z animowanym tłem
+2. **Features** - Sposoby zarabiania (quizy, aplikacje, YouTube, etc.)
+3. **How It Works** - 4-krokowy proces zarabiania
+4. **Testimonials** - Opinie zadowolonych użytkowników
+5. **Download** - Linki do pobrania aplikacji
+6. **Footer** - Dodatkowe informacje i linki
+
+## 🎨 Design Features
+
+- Gradient backgrounds
+- Glass morphism effects
+- Hover animations
+- Responsive grid layouts
+- Modern typography
+- Custom scrollbar
+- Focus management
+
+## 📊 Optymalizacja
+
+- SEO metadata
+- Open Graph tags
+- Twitter Cards
+- Viewport configuration
+- Performance optimizations
+- Accessibility features
+
+## 🛠️ Development
 
 ```bash
+# Instalacja dependencies
+npm install
+
+# Uruchomienie dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Struktura Projektu
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── viewport.ts
+├── components/
+│   ├── Download.tsx
+│   ├── Features.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── HowItWorks.tsx
+│   └── Testimonials.tsx
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Call-to-Action
 
-## Learn More
+Strona skupia się na konwersji użytkowników i zachęceniu do pobrania aplikacji FlashTasker. Każda sekcja ma strategicznie umieszczone CTA.
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 Responsive Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Mobile-first approach
+- Breakpoints: sm (640px), md (768px), lg (1024px), xl (1280px)
+- Flexible layouts i typography scaling
+- Touch-friendly interactions na mobile
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Customization
 
-## Deploy on Vercel
+Łatwo dostosuj kolory, fonty i inne style poprzez:
+- Tailwind config
+- CSS custom properties
+- Komponenty React
+- Framer Motion variants
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Stworzone z ❤️ dla FlashTasker
