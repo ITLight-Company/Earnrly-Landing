@@ -1,4 +1,4 @@
 export const getImagePath = (path: string) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/Earnrly-Landing' : '';
-  return `${basePath}${path}`;
+  // basePath is handled by Next.js config, so we just return the path
+  return path;
 };
