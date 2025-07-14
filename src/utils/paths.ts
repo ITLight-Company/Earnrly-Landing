@@ -1,6 +1,5 @@
 export const getImagePath = (path: string) => {
-  // For GitHub Pages deployment, we need to add the repository name as prefix
-  const isProduction = process.env.NODE_ENV === 'production';
-  const basePath = isProduction ? '/Earnrly-Landing' : '';
-  return `${basePath}${path}`;
+  // basePath is handled by Next.js config for GitHub Pages
+  // We just return the path as-is
+  return path;
 };
