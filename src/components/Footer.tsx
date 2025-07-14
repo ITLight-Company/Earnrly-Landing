@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { getImagePath } from '../utils/paths'
 import {
     Smartphone,
     Mail,
@@ -66,7 +67,7 @@ export default function Footer() {
                         {/* Logo */}
                         <div className="flex items-center gap-3">
                             <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center">
-                                <Image src="/logo_v2.svg" alt="Earnrly" width={32} height={32} className="w-8 h-8" />
+                                <Image src={getImagePath("/logo_v2.svg")} alt="Earnrly" width={32} height={32} className="w-8 h-8" />
                             </div>
                             <div>
                                 <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">

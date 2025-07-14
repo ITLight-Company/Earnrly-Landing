@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Star, Shield, Zap } from 'lucide-react'
 import Image from 'next/image'
+import { getImagePath } from '../utils/paths'
 
 export default function Download() {
     return (
@@ -50,7 +51,7 @@ export default function Download() {
                                         <div className="w-full h-full rounded-[2.5rem] overflow-hidden relative">
                                             {/* Real App Screenshot */}
                                             <Image
-                                                src="/Screenshot_1752504307.png"
+                                                src={getImagePath("/Screenshot_1752504307.png")}
                                                 alt="Earnrly App Screenshot"
                                                 width={300}
                                                 height={600}
@@ -127,7 +128,7 @@ export default function Download() {
                                     whileTap={{ scale: 0.95 }}
                                     className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-bold py-4 px-6 rounded-2xl text-lg flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transition-shadow duration-300"
                                 >
-                                    <Image src="/launcher_3.png" alt="Earnrly" width={24} height={24} className="w-6 h-6 rounded-lg" />
+                                    <Image src={getImagePath("/launcher_3.png")} alt="Earnrly" width={24} height={24} className="w-6 h-6 rounded-lg" />
                                     Download for Android
                                 </motion.button>
 
@@ -136,7 +137,7 @@ export default function Download() {
                                     whileTap={{ scale: 0.95 }}
                                     className="w-full bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold py-4 px-6 rounded-2xl text-lg flex items-center justify-center gap-3 hover:bg-white/20 transition-colors duration-300"
                                 >
-                                    <Image src="/launcher_3.png" alt="Earnrly" width={24} height={24} className="w-6 h-6 rounded-lg" />
+                                    <Image src={getImagePath("/launcher_3.png")} alt="Earnrly" width={24} height={24} className="w-6 h-6 rounded-lg" />
                                     Download for iOS
                                 </motion.button>
                             </div>

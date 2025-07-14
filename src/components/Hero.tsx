@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Star, DollarSign, Globe } from 'lucide-react'
 import { useState } from 'react'
 import Image from 'next/image'
+import { getImagePath } from '../utils/paths'
 
 export default function Hero() {
     const [language, setLanguage] = useState('en')
@@ -147,7 +148,7 @@ export default function Hero() {
                                 transition={{ duration: 0.8, delay: 0.3 }}
                                 className="mb-8 lg:mb-10 flex items-center justify-center lg:justify-start gap-4"
                             >
-                                <Image src="/logo_v2.svg" alt="Earnrly" width={80} height={80} className="w-16 h-16 lg:w-20 lg:h-20" />
+                                <Image src={getImagePath("/logo_v2.svg")} alt="Earnrly" width={80} height={80} className="w-16 h-16 lg:w-20 lg:h-20" />
                                 <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
                                     Earnrly
                                 </h1>
@@ -210,7 +211,7 @@ export default function Hero() {
                                 className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center lg:justify-start items-center mb-8 lg:mb-10"
                             >
                                 <button className="group relative bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-bold py-4 lg:py-5 px-8 lg:px-10 rounded-full text-base lg:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl flex items-center gap-3 w-full sm:w-auto shadow-xl">
-                                    <Image src="/launcher_3.png" alt="Earnrly" width={24} height={24} className="w-5 h-5 lg:w-6 lg:h-6 rounded-lg" />
+                                    <Image src={getImagePath("/launcher_3.png")} alt="Earnrly" width={24} height={24} className="w-5 h-5 lg:w-6 lg:h-6 rounded-lg" />
                                     {currentContent.downloadBtn}
                                     <motion.div
                                         className="absolute inset-0 bg-white/20 rounded-full"
@@ -261,7 +262,7 @@ export default function Hero() {
                                 <div className="w-full h-full rounded-[2rem] overflow-hidden relative">
                                     {/* Real App Screenshot */}
                                     <Image
-                                        src="/Screenshot_1752504307.png"
+                                        src={getImagePath("/Screenshot_1752504307.png")}
                                         alt="Earnrly App Screenshot"
                                         width={300}
                                         height={600}
