@@ -49,9 +49,9 @@ export default function Download() {
                                     <div className="w-80 h-[600px] bg-gray-900 rounded-[3rem] p-6 shadow-2xl mx-auto">
                                         <div className="w-full h-full rounded-[2.5rem] overflow-hidden relative">
                                             {/* Real App Screenshot */}
-                                            <Image 
-                                                src="/Screenshot_1752504307.png" 
-                                                alt="Earnrly App Screenshot" 
+                                            <Image
+                                                src="/Screenshot_1752504307.png"
+                                                alt="Earnrly App Screenshot"
                                                 width={300}
                                                 height={600}
                                                 className="w-full h-full object-cover"

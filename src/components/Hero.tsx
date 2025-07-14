@@ -260,14 +260,14 @@ export default function Hero() {
                             <div className="w-72 h-[580px] bg-gray-900 rounded-[2.5rem] p-3 shadow-2xl relative overflow-hidden mx-auto">
                                 <div className="w-full h-full rounded-[2rem] overflow-hidden relative">
                                     {/* Real App Screenshot */}
-                                    <Image 
-                                        src="/Screenshot_1752504307.png" 
-                                        alt="Earnrly App Screenshot" 
+                                    <Image
+                                        src="/Screenshot_1752504307.png"
+                                        alt="Earnrly App Screenshot"
                                         width={300}
                                         height={600}
                                         className="w-full h-full object-cover"
                                     />
-                                    
+
                                     {/* Overlay with floating elements */}
                                     <div className="absolute inset-0">
                                         <motion.div
